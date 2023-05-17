@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.135.0/build/three.min.js"></script>
+    <audio id="backgroundMusic" src="music.mp3" autoplay loop></audio>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.135.0/examples/js/postprocessing/EffectComposer.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.135.0/examples/js/postprocessing/RenderPass.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.135.0/examples/js/postprocessing/ShaderPass.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.135.0/examples/js/shaders/LuminosityHighPassShader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.135.0/examples/js/shaders/CopyShader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.135.0/examples/js/postprocessing/UnrealBloomPass.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.135.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.135.0/examples/js/postprocessing/EffectComposer.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>My 3D Scene</title>
+    <style>
+        canvas {
+        pointer-events: auto;
+        }
+</style>
+
+    </style>
+</head>
+<body>
+    <!-- Your Three.js scene will be added here -->
+    <script src="test2.js"></script>
+    
+    <div id="sliderContainer">
+        <input type="range" id="bloomSlider" min="0" max="2" step="0.1" value="1">
+    </div>
+    
+    <style>
+        #sliderContainer {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            z-index: 100;
+        }
+    </style>
+
+    <div id="volumeContainer">
+        <input type="range" id="volumeSlider" min="0" max="1" step="0.1" value="0.5">
+    </div>
+    
+    <style>
+        #volumeContainer {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            z-index: 100;
+        }
+    </style>
+    
+
+</body>
+    
